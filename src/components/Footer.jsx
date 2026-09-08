@@ -1,7 +1,7 @@
 import React from 'react';
 import { SOCIAL_LINKS } from '../data/socials';
 import { GithubIcon, LinkedinIcon, InstagramIcon } from './BrandIcons';
-import { ArrowUp, Terminal, Heart } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="space-y-1 text-center sm:text-left">
             <h3 className="font-bold text-slate-100 text-sm tracking-tight">Ajuruddin Ali</h3>
             <p className="text-slate-400 text-xs font-sans">
-              Software Developer • Cloud & DevOps Enthusiast
+              Full-Stack Developer • Web & API Specialist
             </p>
           </div>
 

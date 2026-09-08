@@ -12,9 +12,9 @@ export default function Terminal() {
     { type: 'cmd', text: 'whoami' },
     { type: 'output', text: 'ajuruddin-ali (B.Tech IT Final Year @ REC Mirzapur)' },
     { type: 'cmd', text: 'role' },
-    { type: 'output', text: 'Software Developer | Web Developer | Cloud & DevOps Enthusiast' },
+    { type: 'output', text: 'Full-Stack Developer | React & Node.js Specialist' },
     { type: 'cmd', text: 'focus' },
-    { type: 'output', text: 'Code → Container → Cloud → Production' },
+    { type: 'output', text: 'Frontend → Backend → Database → Cloud Deployment' },
     { type: 'cmd', text: 'help' },
     { type: 'output', text: "Type 'projects', 'about', 'skills', 'experience', 'education', 'contact', 'resume' or 'sudo hire ajuruddin' to execute!" }
   ]);
@@ -31,7 +31,7 @@ export default function Terminal() {
   }, [history]);
 
   const triggerConfetti = () => {
-    try { confetti({ particleCount: 85, spread: 65, origin: { y: 0.7 } }); } catch (err) {}
+    try { confetti({ particleCount: 85, spread: 65, origin: { y: 0.7 } }); } catch {}
   };
 
   const executeCommand = (cmdString) => {

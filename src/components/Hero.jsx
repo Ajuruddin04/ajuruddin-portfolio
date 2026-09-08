@@ -2,7 +2,7 @@ import React from 'react';
 import { PROFILE } from '../data/profile';
 import { SOCIAL_LINKS } from '../data/socials';
 import { GithubIcon } from './BrandIcons';
-import { ArrowRight, Download, Sparkles, Cloud, Server, Code2 } from 'lucide-react';
+import { ArrowRight, Download, Sparkles, Database, Server, Code2 } from 'lucide-react';
 import Terminal from './Terminal';
 
 export default function Hero() {
@@ -22,7 +22,7 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel border-purple-500/30 text-purple-300 text-xs font-mono">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
               <span className="w-2 h-2 rounded-full bg-emerald-400 -ml-4" />
-              <span>B.Tech IT • Software Development • Cloud & DevOps</span>
+              <span>B.Tech IT • Full-Stack Developer • React & Node.js</span>
             </div>
 
             {/* Name & Headline */}
@@ -88,15 +88,15 @@ export default function Hero() {
             <div className="pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-6 text-xs text-slate-400 font-mono">
               <div className="flex items-center gap-2">
                 <Code2 className="w-4 h-4 text-purple-400" />
-                <span>Java & JS</span>
+                <span>React & JS</span>
               </div>
               <div className="flex items-center gap-2">
-                <Cloud className="w-4 h-4 text-cyan-400" />
-                <span>AWS Cloud</span>
+                <Server className="w-4 h-4 text-indigo-400" />
+                <span>Node.js & Express APIs</span>
               </div>
               <div className="flex items-center gap-2">
-                <Server className="w-4 h-4 text-emerald-400" />
-                <span>Docker & DevOps</span>
+                <Database className="w-4 h-4 text-cyan-400" />
+                <span>MongoDB & MySQL</span>
               </div>
             </div>
 

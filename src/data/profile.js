@@ -1,26 +1,27 @@
 export const PROFILE = {
   name: "Ajuruddin Ali",
   nickname: "Azzu",
-  role: "B.Tech IT Student | Software Developer | Cloud & DevOps Enthusiast",
-  headline: "Building software. Exploring cloud. Automating the boring stuff.",
-  subheadline: "I'm Ajuruddin Ali, a final-year Information Technology student focused on software development, modern web technologies, AWS, Linux, and DevOps.",
-  tagline: "BUILD. DEPLOY. LEARN. REPEAT.",
-  bio: "I am an Information Technology student passionate about building software and understanding the systems behind it. I enjoy working with modern web technologies while exploring cloud computing, Linux, AWS, Docker, and DevOps practices. I'm particularly interested in how applications move from Code → Container → Cloud → Production.",
-  status: "Seeking Internship & Entry-Level Software / Cloud / DevOps Roles",
+  role: "B.Tech IT Student | Full-Stack Developer | React & Node.js Specialist",
+  headline: "Crafting scalable web applications. Building modern full-stack solutions.",
+  subheadline: "I'm Ajuruddin Ali, a final-year Information Technology student & Full-Stack Developer specializing in React, Node.js, Express, JavaScript/TypeScript, REST APIs, and databases.",
+  tagline: "DESIGN. DEVELOP. DEPLOY. SCALE.",
+  bio: "I am an Information Technology student and passionate Full-Stack Developer who loves crafting interactive, responsive user interfaces and engineering robust backend APIs & database architectures. I enjoy building end-to-end applications—from pixel-perfect React components to scalable server backends and cloud deployment.",
+  status: "Seeking Internship & Entry-Level Full-Stack / Software Engineering Roles",
   education: {
     degree: "Bachelor of Technology — Information Technology",
-    status: "Final Year (2026)",
+    status: "Final Year (2027)",
     institution: "Rajkiya Engineering College, Mirzapur",
-    period: "2022 – 2026"
+    period: "2023 – 2027"
   },
   workstation: {
     os: "Ubuntu Linux",
     shell: "Bash / Zsh",
     editor: "VS Code",
-    runtime: "Node.js / Java",
-    container: "Docker & Docker Compose",
-    cloud: "AWS (EC2, S3, IAM, VPC)",
-    versioning: "Git + GitHub"
+    frontend: "React, JavaScript ES6+, HTML5, Tailwind CSS",
+    backend: "Node.js, Express.js, REST APIs, Java",
+    database: "MongoDB, MySQL",
+    cloudAndDevOps: "Docker, AWS (EC2, S3), Git & GitHub"
   },
-  philosophy: "A developer who builds software, understands infrastructure, and is continuously leveling up."
+  philosophy: "Building intuitive frontends, engineering resilient backends, and delivering seamless web experiences."
 };
+

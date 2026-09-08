@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <section id="experience" className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Title */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel text-cyan-400 text-xs font-mono">
@@ -22,7 +22,7 @@ export default function Experience() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          
+
           {/* Experience Column */}
           <div className="space-y-6">
             <div className="flex items-center gap-3 mb-6">
@@ -39,7 +39,7 @@ export default function Experience() {
             <div className="glass-panel p-7 rounded-2xl border border-slate-800 space-y-4 hover:border-slate-700 transition-all">
               <div className="flex items-start justify-between gap-4 flex-wrap">
                 <div>
-                  <h4 className="text-lg font-bold text-slate-100">DevOps / IT Intern</h4>
+                  <h4 className="text-lg font-bold text-slate-100">Full Stack Developer Intern</h4>
                   <div className="flex items-center gap-2 text-purple-400 text-xs font-semibold mt-1">
                     <Building2 className="w-3.5 h-3.5" />
                     <span>Uttar Pradesh Power Corporation Limited (UPPCL)</span>

@@ -1,56 +1,57 @@
 export const LEARNING_JOURNEY = [
   {
     phase: "Phase 1",
-    title: "Web Development",
+    title: "Web Development Fundamentals",
     icon: "Layout",
     status: "Completed",
     color: "emerald",
-    details: "Mastered HTML5, CSS3, JavaScript ES6+, DOM manipulation, responsive design, and single-page application concepts."
+    details: "Mastered HTML5, CSS3, JavaScript ES6+, DOM manipulation, responsive UI design, and single-page application fundamentals."
   },
   {
     phase: "Phase 2",
-    title: "Software Engineering",
-    icon: "Code",
+    title: "React & Modern Frontend",
+    icon: "Atom",
     status: "Completed / Active",
     color: "blue",
-    details: "Built strong foundation in Java, Data Structures & Algorithms, OOP principles, and clean code architecture."
+    details: "Built interactive web apps using React, functional components, custom hooks, state management, and modern Tailwind CSS."
   },
   {
     phase: "Phase 3",
-    title: "AWS & Cloud",
-    icon: "Cloud",
+    title: "Node.js & Backend APIs",
+    icon: "Server",
     status: "Active Focus",
     color: "purple",
-    details: "Exploring core AWS services: IAM security, EC2 compute instances, S3 object storage, VPC networking, and AWS CLI."
+    details: "Engineering RESTful APIs with Node.js and Express.js, implementing JWT authentication, middleware, and backend security."
   },
   {
     phase: "Phase 4",
-    title: "Docker & DevOps",
-    icon: "Box",
+    title: "Databases & Data Architecture",
+    icon: "Database",
     status: "Active Focus",
     color: "amber",
-    details: "Containerizing multi-tier applications, writing Dockerfiles & Docker Compose, and setting up automated CI/CD pipelines."
+    details: "Designing relational (PostgreSQL/MySQL) & NoSQL (MongoDB) schemas, building CRUD APIs, and working with Prisma & Mongoose ORMs."
   },
   {
     phase: "Phase 5",
-    title: "Infrastructure as Code",
-    icon: "Layers",
-    status: "Currently Exploring",
+    title: "Full-Stack Integration & Containers",
+    icon: "Box",
+    status: "Active Focus",
     color: "cyan",
-    details: "Learning Terraform to version, manage, and provision cloud resources declaratively and repeatably."
+    details: "Connecting React frontends to Express backends, containerizing multi-tier full-stack apps with Docker Compose & Git workflows."
   },
   {
     phase: "Phase 6",
-    title: "Kubernetes & Cloud-Native",
-    icon: "Ship",
+    title: "Next.js & Cloud Deployment",
+    icon: "Globe",
     status: "Upcoming Goal",
     color: "indigo",
-    details: "Understanding container orchestration, deployments, services, ingress, and production cluster operations."
+    details: "Mastering Next.js App Router, SSR/SSG, deploy web applications on AWS EC2 & Vercel with automated deployment pipelines."
   }
 ];
 
 export const GOAL_STATEMENT = {
   title: "Long-Term Career Direction",
-  path: "Software Developer → Cloud → DevOps → Cloud Infrastructure / Platform Engineering",
-  motto: "Code it clean, containerize it smoothly, deploy it reliably on the cloud."
+  path: "Full-Stack Developer → Senior Software Engineer → Technical Lead / Solutions Architect",
+  motto: "Craft modern web experiences, engineer scalable backends, and solve real-world problems."
 };
+

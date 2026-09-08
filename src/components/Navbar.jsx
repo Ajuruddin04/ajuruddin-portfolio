@@ -1,28 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { SOCIAL_LINKS } from '../data/socials';
 import { GithubIcon } from './BrandIcons';
-import { Menu, X, Terminal, ExternalLink, Download } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
+
+const NAV_ITEMS = [
+  { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Journey', href: '#journey' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Contact', href: '#contact' },
+];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
-  const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Journey', href: '#journey' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Contact', href: '#contact' },
-  ];
+  // Use module-scope NAV_ITEMS for stable reference
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
 
-      const sections = navItems.map(item => item.href.substring(1));
+      const sections = NAV_ITEMS.map(item => item.href.substring(1));
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -53,13 +55,13 @@ export default function Navbar() {
           </div>
           <div>
             <span className="font-bold text-slate-100 text-base tracking-tight group-hover:text-purple-400 transition-colors">AJURUDDIN ALI</span>
-            <span className="block text-[10px] font-mono text-slate-400 tracking-wider">DEV // CLOUD & DEVOPS</span>
+            <span className="block text-[10px] font-mono text-slate-400 tracking-wider">FULL-STACK DEVELOPER</span>
           </div>
         </a>
 
         {/* Desktop Nav Items */}
         <nav className="hidden md:flex items-center gap-1 glass-panel px-4 py-1.5 rounded-full">
-          {navItems.map((item) => (
+          {NAV_ITEMS.map((item) => (
             <a
               key={item.name}
               href={item.href}
@@ -121,7 +123,7 @@ export default function Navbar() {
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden glass-nav border-b border-slate-800/80 px-4 pt-3 pb-6 space-y-2 animate-in fade-in slide-in-from-top-2 duration-200">
-          {navItems.map((item) => (
+          {NAV_ITEMS.map((item) => (
             <a
               key={item.name}
               href={item.href}

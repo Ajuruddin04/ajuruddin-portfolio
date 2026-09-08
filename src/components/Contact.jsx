@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SOCIAL_LINKS } from '../data/socials';
 import { GithubIcon, LinkedinIcon, InstagramIcon } from './BrandIcons';
-import { Mail, Send, Copy, Check, Sparkles, MessageSquare, Terminal as TerminalIcon } from 'lucide-react';
+import { Mail, Send, Copy, Check, Sparkles, MessageSquare } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export default function Contact() {
@@ -21,7 +21,7 @@ export default function Contact() {
     if (!formData.name || !formData.email || !formData.message) return;
 
     setFormSubmitted(true);
-    try { confetti({ particleCount: 70, spread: 60, origin: { y: 0.8 } }); } catch(err){}
+    try { confetti({ particleCount: 70, spread: 60, origin: { y: 0.8 } }); } catch {}
     setTimeout(() => {
       setFormSubmitted(false);
       setFormData({ name: '', email: '', message: '' });
@@ -63,7 +63,7 @@ export default function Contact() {
               </h3>
               
               <p className="text-slate-300 text-sm leading-relaxed">
-                Whether you're looking for an eager software developer, cloud/DevOps enthusiast, or intern for your tech team, feel free to reach out.
+                Whether you're looking for a passionate Full-Stack Developer, React/Node.js engineer, or intern for your tech team, feel free to reach out.
               </p>
 
               {/* Direct Buttons */}

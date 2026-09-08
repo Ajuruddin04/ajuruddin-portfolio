@@ -1,6 +1,6 @@
 import React from 'react';
 import { CURRENTLY_LEVELING_UP } from '../data/skills';
-import { TrendingUp, Flame, CheckCircle2 } from 'lucide-react';
+import { Flame } from 'lucide-react';
 
 export default function CurrentlyLearning() {
   return (

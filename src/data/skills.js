@@ -1,107 +1,104 @@
 export const SKILL_CATEGORIES = [
   {
-    title: "Development & Languages",
+    title: "Frontend Development",
     icon: "Code2",
     skills: [
-      { name: "Java", level: "Core", status: "Proficient", icon: "Coffee" },
-      { name: "JavaScript", level: "ES6+", status: "Proficient", icon: "FileCode2" },
-      { name: "React", level: "Frontend", status: "Practicing", icon: "Atom" },
-      { name: "Node.js", level: "Backend", status: "Practicing", icon: "Server" },
-      { name: "HTML5", level: "Web", status: "Proficient", icon: "Layout" },
-      { name: "CSS3", level: "Styling", status: "Proficient", icon: "Palette" }
+      { name: "React", level: "UI Library", status: "Proficient", icon: "Atom" },
+      { name: "JavaScript", level: "ES6+ / Modern JS", status: "Proficient", icon: "FileCode2" },
+      { name: "HTML5 & CSS3", level: "Web Standards", status: "Proficient", icon: "Layout" },
+      { name: "Tailwind CSS", level: "Styling Framework", status: "Proficient", icon: "Palette" },
+      { name: "Responsive UI", level: "Mobile-First", status: "Proficient", icon: "Smartphone" },
+      { name: "State Management", level: "Context API / Redux", status: "Practicing", icon: "Layers" }
     ]
   },
   {
-    title: "Cloud Computing",
+    title: "Backend & API Engineering",
+    icon: "Server",
+    skills: [
+      { name: "Node.js", level: "Runtime Environment", status: "Proficient", icon: "Server" },
+      { name: "Express.js", level: "Web Framework", status: "Proficient", icon: "Cpu" },
+      { name: "RESTful APIs", level: "API Design & Spec", status: "Proficient", icon: "Workflow" },
+      { name: "Java", level: "OOP & Core Backend", status: "Proficient", icon: "Coffee" },
+      { name: "Authentication", level: "JWT / Session", status: "Practicing", icon: "Lock" },
+      { name: "JSON & Middleware", level: "Data Exchange", status: "Proficient", icon: "Code" }
+    ]
+  },
+  {
+    title: "Databases & Storage",
+    icon: "Database",
+    skills: [
+      { name: "MongoDB", level: "NoSQL Database", status: "Practicing", icon: "Database" },
+      // { name: "PostgreSQL", level: "Relational SQL", status: "Currently Learning", icon: "Database" },
+      { name: "MySQL", level: "Relational DB", status: "Practicing", icon: "Database" },
+      // { name: "Mongoose / Prisma", level: "ORM / ODM", status: "Practicing", icon: "Layers" }
+    ]
+  },
+  {
+    title: "DevOps & Cloud Deployment",
     icon: "Cloud",
     skills: [
-      { name: "AWS", level: "EC2, S3, IAM, VPC", status: "Currently Learning", icon: "CloudSun" },
-      { name: "AWS CLI", level: "Automation", status: "Currently Learning", icon: "Terminal" },
-      { name: "Cloud Architecture", level: "Core Concepts", status: "Currently Learning", icon: "Network" }
+      { name: "Docker", level: "Containerization", status: "Practicing", icon: "Box" },
+      { name: "Docker Compose", level: "Multi-container Stack", status: "Practicing", icon: "Boxes" },
+      { name: "Git & GitHub", level: "Version Control & Workflow", status: "Proficient", icon: "GitBranch" },
+      { name: "AWS", level: "EC2 & S3 Basics", status: "Currently Learning", icon: "CloudSun" },
+      { name: "Vercel / Netlify", level: "Web Hosting", status: "Proficient", icon: "Globe" },
+      { name: "Linux", level: "Ubuntu / Bash", status: "Active User", icon: "Terminal" }
     ]
   },
   {
-    title: "DevOps & Infrastructure",
-    icon: "Cpu",
-    skills: [
-      { name: "Docker", level: "Containerization", status: "Currently Learning", icon: "Box" },
-      { name: "Docker Compose", level: "Multi-container", status: "Currently Learning", icon: "Boxes" },
-      { name: "Git & GitHub", level: "Version Control", status: "Proficient", icon: "GitBranch" },
-      { name: "CI/CD Pipelines", level: "Automation", status: "Currently Learning", icon: "Workflow" },
-      { name: "Terraform", level: "IaC Basics", status: "Currently Learning", icon: "Layers" },
-      { name: "Kubernetes", level: "Orchestration Intro", status: "Currently Learning", icon: "Ship" }
-    ]
-  },
-  {
-    title: "Systems & Networking",
-    icon: "Terminal",
-    skills: [
-      { name: "Linux", level: "Ubuntu / Debian", status: "Active User", icon: "Terminal" },
-      { name: "Bash / Shell", level: "Scripting", status: "Practicing", icon: "FileTerminal" },
-      { name: "Networking", level: "DNS, HTTP, IP, Ports", status: "Fundamentals", icon: "Wifi" },
-      { name: "SysAdmin", level: "Basic Admin", status: "Practicing", icon: "Sliders" }
-    ]
-  },
-  {
-    title: "Development Tools",
+    title: "Development Tools & Environment",
     icon: "Wrench",
     skills: [
       { name: "VS Code", level: "Primary IDE", status: "Proficient", icon: "Laptop" },
-      { name: "GitHub", level: "Collaborate", status: "Proficient", icon: "GitCommit" },
-      { name: "npm / Node Package Manager", level: "Build Tool", status: "Proficient", icon: "Package" },
-      { name: "Python", level: "Scripting & Basics", status: "Practicing", icon: "Code" }
+      { name: "Postman", level: "API Testing & Docs", status: "Proficient", icon: "Send" },
+      { name: "npm / Vite", level: "Build & Package Tools", status: "Proficient", icon: "Package" },
+      { name: "Python", level: "Scripting & Data Basics", status: "Practicing", icon: "Code" }
     ]
   }
 ];
 
 export const CURRENTLY_LEVELING_UP = [
   {
-    topic: "AWS & Cloud Infrastructure",
-    icon: "☁️",
-    badge: "Cloud",
+    topic: "Next.js & Full-Stack React Frameworks",
+    icon: "⚡",
+    badge: "Full-Stack",
     progress: 75,
-    description: "Deep-diving into IAM policies, VPC subnetting, EC2 instance management, and S3 lifecycle rules."
+    description: "Learning Server-Side Rendering (SSR), Static Site Generation (SSG), App Router, and full-stack API routes."
+  },
+  // {
+  //   topic: "PostgreSQL & Prisma ORM",
+  //   icon: "🐘",
+  //   badge: "Backend / DB",
+  //   progress: 70,
+  //   description: "Designing relational database schemas, complex SQL queries, indexes, and type-safe Prisma database access."
+  // },
+  {
+    topic: "RESTful API Architecture & Authentication",
+    icon: "🔐",
+    badge: "API Design",
+    progress: 85,
+    description: "Building scalable Node.js/Express REST endpoints, JWT authentication middleware, rate limiting, and input validation."
   },
   {
-    topic: "Docker & Containerization",
-    icon: "🐳",
-    badge: "DevOps",
-    progress: 80,
-    description: "Writing Dockerfiles, multi-stage builds, and orchestrating multi-container setups with Docker Compose."
-  },
-  {
-    topic: "DevOps & CI/CD",
-    icon: "⚙️",
-    badge: "Automation",
-    progress: 65,
-    description: "Building automated test & deployment workflows using GitHub Actions and Linux shell scripts."
-  },
-  {
-    topic: "Infrastructure as Code (Terraform)",
-    icon: "🏗️",
-    badge: "IaC",
-    progress: 50,
-    description: "Learning HCL syntax to declaratively provision AWS cloud resources predictably."
-  },
-  {
-    topic: "Kubernetes Fundamentals",
-    icon: "☸️",
-    badge: "Orchestration",
-    progress: 40,
-    description: "Understanding pods, deployments, services, and local Minikube cluster management."
-  },
-  {
-    topic: "DSA & Problem Solving",
+    topic: "DSA & Algorithmic Problem Solving",
     icon: "🧠",
     badge: "Core CS",
     progress: 85,
-    description: "Consistent practice in Data Structures, Algorithms, and Space/Time Complexity optimization."
+    description: "Consistent practice in Data Structures, Algorithms, and Space/Time Complexity optimization in Java & JavaScript."
   },
   {
-    topic: "Java Development",
-    icon: "☕",
-    badge: "Programming",
+    topic: "Containerized Web Applications (Docker)",
+    icon: "🐳",
+    badge: "DevOps",
     progress: 80,
-    description: "Object-oriented programming, Collections framework, and backend application fundamentals."
+    description: "Containerizing React + Node.js + Database applications with multi-stage Dockerfiles and Docker Compose."
+  },
+  {
+    topic: "Cloud Deployment & AWS Basics",
+    icon: "☁️",
+    badge: "Cloud",
+    progress: 70,
+    description: "Deploying full-stack web applications to AWS EC2, configuring S3 buckets, and setting up reverse proxies with Nginx."
   }
 ];
+

@@ -1,6 +1,6 @@
 import React from 'react';
 import { SKILL_CATEGORIES } from '../data/skills';
-import { Code2, Cloud, Cpu, Terminal, Wrench, Sparkles, CheckCircle, Clock } from 'lucide-react';
+import { Code2, Cloud, Cpu, Terminal, Wrench } from 'lucide-react';
 
 export default function Skills() {
   const iconMap = {

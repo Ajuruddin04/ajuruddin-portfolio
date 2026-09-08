@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { PROJECTS } from '../data/projects';
 import { GithubIcon } from './BrandIcons';
-import { FolderGit2, ExternalLink, Sparkles, Layers, CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
+import { FolderGit2, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [expandedId, setExpandedId] = useState(null);
 
-  const filters = ['All', 'Featured', 'Web Development', 'Cloud / DevOps'];
+  const filters = ['All', 'Featured', 'Full-Stack', 'Frontend'];
 
   const filteredProjects = PROJECTS.filter(project => {
     if (activeFilter === 'All') return true;
-    if (activeFilter === 'Featured') return project.category === 'Featured' || project.highlight;
+    if (activeFilter === 'Featured') return project.highlight;
     return project.category === activeFilter || project.subCategory === activeFilter;
   });
 

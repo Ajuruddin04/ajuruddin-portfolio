@@ -1,6 +1,6 @@
 import React from 'react';
 import { PROFILE } from '../data/profile';
-import { Terminal, Cpu, Server, Shield, Laptop, Monitor, Layers, CheckCircle2 } from 'lucide-react';
+import { Terminal, Server, Laptop, CheckCircle2 } from 'lucide-react';
 
 export default function About() {
   return (

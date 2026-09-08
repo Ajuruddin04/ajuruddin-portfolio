@@ -1,6 +1,6 @@
 import React from 'react';
 import { LEARNING_JOURNEY, GOAL_STATEMENT } from '../data/journey';
-import { Compass, Layout, Code, Cloud, Box, Layers, Ship, Target, ArrowDown } from 'lucide-react';
+import { Compass, Layout, Code, Cloud, Box, Layers, Ship, Target } from 'lucide-react';
 
 export default function Journey() {
   const iconMap = {
@@ -96,7 +96,7 @@ export default function Journey() {
                   CAREER GOAL & DIRECTION
                 </span>
                 <h3 className="text-xl font-bold text-white">
-                  Cloud / DevOps & Infrastructure Engineer
+                  Full-Stack Software Engineer
                 </h3>
               </div>
               <p className="text-xs text-slate-400 font-mono">

@@ -104,24 +104,24 @@ export const processCommand = (rawInput, socialLinks = {}, triggerConfetti = () 
       return { type: 'info', output: 'ajuruddin-ali (B.Tech IT Final Year @ REC Mirzapur)' };
 
     case 'role':
-      return { type: 'info', output: 'Software Developer | Web Developer | Cloud & DevOps Enthusiast' };
+      return { type: 'info', output: 'Full-Stack Developer | React & Node.js Specialist | B.Tech IT' };
 
     case 'focus':
-      return { type: 'info', output: 'Code → Container → Cloud → Production' };
+      return { type: 'info', output: 'Frontend → Backend → Databases → REST APIs → Cloud Deployment' };
 
     case 'status':
       return {
         type: 'info',
-        output: 'SYSTEM STATUS\n--------------\nOS: Ubuntu Linux\nFocus: Software Development\nLearning: AWS + DevOps\nStatus: Building...'
+        output: 'SYSTEM STATUS\n--------------\nOS: Ubuntu Linux\nFocus: Full-Stack Web Development\nTech Stack: React, Node.js, Express, MongoDB/SQL\nStatus: Building scalable web applications...'
       };
 
     case 'sudo hire ajuruddin':
     case 'hire':
       triggerConfetti();
-      return { type: 'special', output: "[sudo] permission granted. Let's build something. 🚀" };
+      return { type: 'special', output: "[sudo] permission granted. Let's build full-stack apps together! 🚀" };
 
     case 'npm run future':
-      return { type: 'info', output: 'Building... Software Engineering → Cloud → DevOps → Infrastructure Engineering' };
+      return { type: 'info', output: 'Building... Full-Stack Developer → Senior Software Engineer → Tech Lead' };
 
     case 'ls':
     case 'dir':
