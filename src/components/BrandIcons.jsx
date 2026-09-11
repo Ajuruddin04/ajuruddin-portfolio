@@ -31,3 +31,12 @@ export function TwitterIcon({ className = "w-5 h-5" }) {
     </svg>
   );
 }
+
+export function CodeforcesIcon({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4.5 7.5A1.5 1.5 0 0 0 3 9v9a1.5 1.5 0 0 0 3 0V9a1.5 1.5 0 0 0-1.5-1.5zM12 3a1.5 1.5 0 0 0-1.5 1.5v13.5a1.5 1.5 0 0 0 3 0V4.5A1.5 1.5 0 0 0 12 3zm7.5 7.5A1.5 1.5 0 0 0 18 12v6a1.5 1.5 0 0 0 3 0v-6a1.5 1.5 0 0 0-1.5-1.5z" />
+    </svg>
+  );
+}
+

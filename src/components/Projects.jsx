@@ -99,8 +99,18 @@ export default function Projects() {
 
                   {/* Expandable Long Details */}
                   {isExpanded && (
-                    <div className="pt-3 border-t border-slate-800 text-xs text-slate-400 space-y-2 animate-in fade-in duration-200">
-                      <p className="leading-relaxed">{project.longDescription}</p>
+                    <div className="pt-3 border-t border-slate-800 text-xs text-slate-300 space-y-3 animate-in fade-in duration-200">
+                      <p className="text-slate-400 leading-relaxed">{project.longDescription}</p>
+                      {project.bullets && (
+                        <ul className="space-y-1.5 pt-1">
+                          {project.bullets.map((b, bIdx) => (
+                            <li key={bIdx} className="flex items-start gap-2 text-slate-300 text-xs">
+                              <span className="text-purple-400 font-bold">•</span>
+                              <span>{b}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   )}
 

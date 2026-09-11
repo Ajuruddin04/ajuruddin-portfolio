@@ -1,6 +1,6 @@
 import React from 'react';
 import { SOCIAL_LINKS } from '../data/socials';
-import { GithubIcon, LinkedinIcon, InstagramIcon } from './BrandIcons';
+import { GithubIcon, LinkedinIcon, InstagramIcon, CodeforcesIcon } from './BrandIcons';
 import { ArrowUp } from 'lucide-react';
 
 export default function Footer() {
@@ -52,6 +52,18 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <LinkedinIcon className="w-4 h-4" />
+              </a>
+            )}
+
+            {SOCIAL_LINKS.codeforces && (
+              <a
+                href={SOCIAL_LINKS.codeforces}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-amber-400 transition-colors"
+                aria-label="Codeforces"
+              >
+                <CodeforcesIcon className="w-4 h-4" />
               </a>
             )}
 

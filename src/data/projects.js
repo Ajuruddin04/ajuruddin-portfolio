@@ -1,48 +1,64 @@
 export const PROJECTS = [
   {
-    id: "career-tracker",
-    title: "Career Tracker — Placement & Learning Dashboard",
-    description: "An interactive AI-powered full-stack web application designed to track learning progress, daily CS tasks, DSA roadmaps, and career milestones.",
-    longDescription: "Features include a daily task tracker, interactive DSA progress dashboard with spaced repetition, Full-Stack & CS learning roadmaps, milestone planning, progress analytics with activity heatmap, AI coaching assistant, PWA support, and full offline persistence.",
+    id: "quester",
+    title: "Quester — Travel Planning & Route Optimization Platform",
+    description: "Built a full-stack travel planning platform that generates personalized journeys using multiple destinations, travel dates, preferences, and trip constraints.",
+    longDescription: "Implemented route optimization to analyze selected destinations and recommend an efficient travel sequence, minimizing unnecessary distance and travel time. Developed a personalized recommendation system that suggests attractions, activities, and places to visit based on user preferences and destination data.",
+    bullets: [
+      "Built a full-stack travel planning platform that generates personalized journeys using multiple destinations, travel dates, preferences, and trip constraints.",
+      "Implemented route optimization to analyze selected destinations and recommend an efficient travel sequence, minimizing unnecessary distance and travel time.",
+      "Developed a personalized recommendation system that suggests attractions, activities, and places to visit based on user preferences and destination data."
+    ],
     category: "Full-Stack",
-    subCategory: "Frontend & Web App",
-    status: "Production",
+    subCategory: "Travel & AI Platform",
+    status: "Completed",
     statusColor: "emerald",
-    tech: ["React / JS", "HTML5 & CSS3", "REST APIs", "AI Integration", "PWA", "localStorage", "GitHub Pages"],
-    github: "https://github.com/Ajuruddin04/career-tracker",
-    live: "https://ajuruddin04.github.io/career-tracker",
+    tech: ["React.js", "JavaScript", "Node.js", "Flask", "Python", "REST APIs"],
+    github: "https://github.com/Ajuruddin04",
+    live: null,
     highlight: true,
     featuredOrder: 1
   },
   {
-    id: "dockerized-fullstack",
-    title: "Dockerized Full-Stack Web Application",
-    description: "A multi-tier full-stack MERN/PERN application containerized using Docker & Docker Compose with REST APIs, database persistence, and cloud deployment.",
-    longDescription: "Features a modern React single-page frontend communicating with containerized Express/Node.js REST API backend services and database storage. Built with clean software architecture, environment configuration management, and seamless AWS deployment.",
+    id: "uppcl-bill-reporting",
+    title: "UPPCL Consolidated Bill Reporting System",
+    description: "Developed the React + Vite frontend for a full-stack billing and reporting system using Tailwind CSS, React Router, and Node.js REST APIs.",
+    longDescription: "Built role-based dashboards, data-entry workflows, report search/download interfaces, and reusable UI components. Integrated the frontend with Node.js/Express REST APIs, JWT authentication, and report-generation features.",
+    bullets: [
+      "Developed the React + Vite frontend for a full-stack billing and reporting system using Tailwind CSS and React Router.",
+      "Built role-based dashboards, data-entry workflows, report search/download interfaces, and reusable UI components.",
+      "Integrated the frontend with Node.js/Express REST APIs, JWT authentication, and report-generation features."
+    ],
     category: "Full-Stack",
-    subCategory: "Backend & Containers",
-    status: "In Development",
-    statusColor: "amber",
-    tech: ["React", "Node.js", "Express", "MongoDB / SQL", "Docker", "Docker Compose", "REST API", "AWS"],
+    subCategory: "Enterprise App",
+    status: "Completed (Internship)",
+    statusColor: "blue",
+    tech: ["React", "Vite", "Tailwind CSS", "React Router", "REST APIs", "Node.js", "JWT"],
     github: "https://github.com/Ajuruddin04",
     live: null,
     highlight: true,
     featuredOrder: 2
   },
   {
-    id: "uppcl-billing-system",
-    title: "UPPCL Utility Web Portal System",
-    description: "Web interface development and UI design for Uttar Pradesh Power Corporation Limited's enterprise billing workflow system during internship training.",
-    longDescription: "Engineered responsive web interfaces, dynamic forms, data tables, and client-side validation logic for utility billing application modules in a real-world enterprise IT environment.",
-    category: "Frontend",
-    subCategory: "Internship Project",
-    status: "Completed (Internship)",
-    statusColor: "blue",
-    tech: ["JavaScript (ES6+)", "HTML5", "CSS3", "UI/UX Design", "Enterprise Web Portal"],
+    id: "career-os",
+    title: "Career OS — Career Management & CP Tracking Platform",
+    description: "Built a full-stack career management platform that helps students plan, organize, and track academic and career goals through customizable study schedules and timetables.",
+    longDescription: "Developed productivity and progress-tracking features for managing subjects, study sessions, tasks, and learning milestones. Integrated competitive programming tracking for LeetCode and Codeforces to organize coding practice and monitor problem-solving progress.",
+    bullets: [
+      "Built a full-stack career management platform that helps students plan, organize, and track academic and career goals through customizable study schedules and timetables.",
+      "Developed productivity and progress-tracking features for managing subjects, study sessions, tasks, and learning milestones.",
+      "Integrated competitive programming tracking for LeetCode and Codeforces to organize coding practice and monitor problem-solving progress."
+    ],
+    category: "Full-Stack",
+    subCategory: "Career & CP Platform",
+    status: "Completed",
+    statusColor: "emerald",
+    tech: ["Next.js", "React", "TypeScript", "Prisma ORM", "PostgreSQL", "LeetCode & Codeforces APIs"],
     github: "https://github.com/Ajuruddin04",
     live: null,
-    highlight: false,
+    highlight: true,
     featuredOrder: 3
   }
 ];
+
 

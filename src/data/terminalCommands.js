@@ -78,8 +78,8 @@ export const processCommand = (rawInput, socialLinks = {}, triggerConfetti = () 
 
     // External link commands
     case 'resume':
-      if (typeof window !== 'undefined') window.open(socialLinks.resume || '/resume.pdf', '_blank');
-      return { type: 'link', output: '📄 Opening resume.pdf...' };
+      if (typeof window !== 'undefined') window.open(socialLinks.resume || '/resume/Ajuruddin_Resume.pdf', '_blank');
+      return { type: 'link', output: '📄 Opening Ajuruddin_Resume.pdf...' };
 
     case 'github':
       if (typeof window !== 'undefined' && socialLinks.github) window.open(socialLinks.github, '_blank');
@@ -89,6 +89,11 @@ export const processCommand = (rawInput, socialLinks = {}, triggerConfetti = () 
       const liUrl = socialLinks.linkedin || socialLinks.linkedIn;
       if (typeof window !== 'undefined' && liUrl) window.open(liUrl, '_blank');
       return { type: 'link', output: '💼 Opening LinkedIn profile...' };
+
+    case 'codeforces':
+    case 'cp':
+      if (typeof window !== 'undefined' && socialLinks.codeforces) window.open(socialLinks.codeforces, '_blank');
+      return { type: 'link', output: '🏆 Opening Codeforces profile...' };
 
     case 'instagram':
       if (typeof window !== 'undefined' && socialLinks.instagram) window.open(socialLinks.instagram, '_blank');
@@ -101,18 +106,18 @@ export const processCommand = (rawInput, socialLinks = {}, triggerConfetti = () 
 
     // Special & Info commands
     case 'whoami':
-      return { type: 'info', output: 'ajuruddin-ali (B.Tech IT Final Year @ REC Mirzapur)' };
+      return { type: 'info', output: 'ajuruddin-ali (B.Tech IT @ Samrat Ashok Rajkiya Engineering College Mirzapur)' };
 
     case 'role':
-      return { type: 'info', output: 'Full-Stack Developer | React & Node.js Specialist | B.Tech IT' };
+      return { type: 'info', output: 'Full Stack Developer | Python, Java, React, Next.js, Node.js, Express, Flask, PostgreSQL, MongoDB, Docker, GCP' };
 
     case 'focus':
-      return { type: 'info', output: 'Frontend → Backend → Databases → REST APIs → Cloud Deployment' };
+      return { type: 'info', output: 'Frontend → Backend & REST APIs → Databases & ORMs → Containers & Cloud Infrastructure' };
 
     case 'status':
       return {
         type: 'info',
-        output: 'SYSTEM STATUS\n--------------\nOS: Ubuntu Linux\nFocus: Full-Stack Web Development\nTech Stack: React, Node.js, Express, MongoDB/SQL\nStatus: Building scalable web applications...'
+        output: 'SYSTEM STATUS\n--------------\nOS: Ubuntu Linux\nRole: Full Stack Developer\nEducation: B.Tech IT @ REC Mirzapur (Sep 2023 - May 2027)\nInternship: Full Stack Developer Intern @ UPPCL (June 2026 - July 2026)\nKey Projects: Quester, UPPCL Consolidated Bill Reporting System, Career OS'
       };
 
     case 'sudo hire ajuruddin':
@@ -125,12 +130,12 @@ export const processCommand = (rawInput, socialLinks = {}, triggerConfetti = () 
 
     case 'ls':
     case 'dir':
-      return { type: 'info', output: 'about/   skills/   projects/   journey/   experience/   education/   contact/   resume.pdf' };
+      return { type: 'info', output: 'about/   skills/   projects/   journey/   experience/   education/   contact/   Ajuruddin_Resume.pdf' };
 
     case 'help':
       return {
         type: 'help',
-        output: `Available commands:\n\nhome        → Go to homepage\nabout       → About me\nskills      → Tech stack & tools\nprojects    → My projects\nexperience  → Experience\neducation   → Education\njourney     → Learning journey\ncontact     → Contact me\nclear       → Clear terminal\nhelp        → Show available commands`
+        output: `Available commands:\n\nhome        → Go to homepage\nabout       → About me\nskills      → Tech stack & tools\nprojects    → My projects (Quester, UPPCL, Career OS)\nexperience  → Experience & UPPCL Internship\neducation   → Academic details\ncodeforces  → Codeforces CP profile\ncontact     → Contact & phone/email\nclear       → Clear terminal\nhelp        → Show available commands`
       };
 
     default:

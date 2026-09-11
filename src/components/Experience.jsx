@@ -46,31 +46,31 @@ export default function Experience() {
                   </div>
                 </div>
 
-                <span className="text-[10px] font-mono px-3 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
-                  Internship / Training Experience
+                <span className="text-[10px] font-mono px-3 py-1 rounded-full bg-purple-950/60 text-purple-300 border border-purple-800/60">
+                  June 2026 – July 2026
                 </span>
               </div>
 
               <div className="text-xs text-slate-400 font-mono flex items-center gap-4 border-t border-b border-slate-800/60 py-2.5">
                 <span className="flex items-center gap-1">
                   <MapPin className="w-3.5 h-3.5 text-slate-500" />
-                  <span>Uttar Pradesh, India</span>
+                  <span>Lucknow, UP</span>
                 </span>
-                <span>• IT Department</span>
+                <span>• Full Stack Web Development</span>
               </div>
 
               <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span>Gained real-world IT environment exposure working alongside utility engineering teams.</span>
+                  <span>Contributed to the development of the UPPCL Consolidated Billing System using React.js, Vite, Node.js, and MongoDB.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span>Contributed to frontend design and user interface enhancements for the <strong>UPPCL Billing System</strong>.</span>
+                  <span>Developed responsive frontend components and integrated REST APIs with backend services to implement end-to-end application functionality.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span>Understood enterprise software development workflows, system reliability practices, and operational data handling.</span>
+                  <span>Worked on CRUD operations, database management, testing, and debugging, gaining hands-on experience in full-stack web application development.</span>
                 </li>
               </ul>
             </div>
@@ -100,7 +100,7 @@ export default function Experience() {
                 </div>
 
                 <span className="text-[10px] font-mono px-3 py-1 rounded-full bg-cyan-950/60 text-cyan-300 border border-cyan-800/60">
-                  {PROFILE.education.status}
+                  {PROFILE.education.period}
                 </span>
               </div>
 
@@ -111,18 +111,18 @@ export default function Experience() {
                 </span>
                 <span className="flex items-center gap-1">
                   <MapPin className="w-3.5 h-3.5 text-slate-500" />
-                  <span>Mirzapur, UP</span>
+                  <span>Mirzapur, Uttar Pradesh</span>
                 </span>
               </div>
 
               <div className="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
                 <p>
-                  Specializing in Information Technology with coursework in Data Structures, Computer Networks, Operating Systems, Database Management Systems, Software Engineering, and Web Technologies.
+                  Pursuing B.Tech in Information Technology with specialized coursework in Data Structures & Algorithms, Database Management Systems, Software Engineering, Web Technologies, and Cloud Infrastructure.
                 </p>
               </div>
 
               <div className="pt-2 flex flex-wrap gap-2">
-                {['Data Structures', 'Operating Systems', 'Networks', 'DBMS', 'Web Tech', 'Software Eng'].map((subject, idx) => (
+                {['Python', 'Java', 'Data Structures', 'SQL & DBMS', 'Web Technologies', 'Operating Systems', 'Docker & GCP'].map((subject, idx) => (
                   <span key={idx} className="text-[10px] font-mono px-2.5 py-1 rounded bg-slate-900 text-slate-400 border border-slate-800">
                     {subject}
                   </span>

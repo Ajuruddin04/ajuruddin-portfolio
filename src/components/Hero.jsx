@@ -88,15 +88,15 @@ export default function Hero() {
             <div className="pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-6 text-xs text-slate-400 font-mono">
               <div className="flex items-center gap-2">
                 <Code2 className="w-4 h-4 text-purple-400" />
-                <span>React & JS</span>
+                <span>React, Next.js & Python</span>
               </div>
               <div className="flex items-center gap-2">
                 <Server className="w-4 h-4 text-indigo-400" />
-                <span>Node.js & Express APIs</span>
+                <span>Node.js, Express & Flask APIs</span>
               </div>
               <div className="flex items-center gap-2">
                 <Database className="w-4 h-4 text-cyan-400" />
-                <span>MongoDB & MySQL</span>
+                <span>MongoDB, PostgreSQL & Prisma</span>
               </div>
             </div>
 

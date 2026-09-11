@@ -1,104 +1,81 @@
 export const SKILL_CATEGORIES = [
   {
-    title: "Frontend Development",
+    title: "Languages",
     icon: "Code2",
     skills: [
-      { name: "React", level: "UI Library", status: "Proficient", icon: "Atom" },
-      { name: "JavaScript", level: "ES6+ / Modern JS", status: "Proficient", icon: "FileCode2" },
-      { name: "HTML5 & CSS3", level: "Web Standards", status: "Proficient", icon: "Layout" },
-      { name: "Tailwind CSS", level: "Styling Framework", status: "Proficient", icon: "Palette" },
-      { name: "Responsive UI", level: "Mobile-First", status: "Proficient", icon: "Smartphone" },
-      { name: "State Management", level: "Context API / Redux", status: "Practicing", icon: "Layers" }
+      { name: "Python", level: "Scripting & Backend", status: "Proficient", icon: "Code" },
+      { name: "Java", level: "OOP & CS Fundamentals", status: "Proficient", icon: "Coffee" },
+      { name: "JavaScript", level: "ES6+ / Modern Web", status: "Proficient", icon: "FileCode2" },
+      { name: "SQL", level: "Relational Queries", status: "Proficient", icon: "Database" },
+      { name: "HTML / CSS", level: "Web Standards", status: "Proficient", icon: "Layout" }
     ]
   },
   {
-    title: "Backend & API Engineering",
-    icon: "Server",
+    title: "Frameworks & Libraries",
+    icon: "Cpu",
     skills: [
-      { name: "Node.js", level: "Runtime Environment", status: "Proficient", icon: "Server" },
-      { name: "Express.js", level: "Web Framework", status: "Proficient", icon: "Cpu" },
-      { name: "RESTful APIs", level: "API Design & Spec", status: "Proficient", icon: "Workflow" },
-      { name: "Java", level: "OOP & Core Backend", status: "Proficient", icon: "Coffee" },
-      { name: "Authentication", level: "JWT / Session", status: "Practicing", icon: "Lock" },
-      { name: "JSON & Middleware", level: "Data Exchange", status: "Proficient", icon: "Code" }
+      { name: "React.js", level: "Frontend Library", status: "Proficient", icon: "Atom" },
+      { name: "Next.js", level: "Full-Stack Framework", status: "Proficient", icon: "Zap" },
+      { name: "Node.js", level: "JS Runtime", status: "Proficient", icon: "Server" },
+      { name: "Express.js", level: "Backend Framework", status: "Proficient", icon: "Layers" },
+      { name: "Flask", level: "Python Microframework", status: "Proficient", icon: "Terminal" },
+      { name: "Tailwind CSS", level: "Styling Framework", status: "Proficient", icon: "Palette" },
+      { name: "React Router", level: "SPA Routing", status: "Proficient", icon: "Workflow" }
     ]
   },
   {
-    title: "Databases & Storage",
+    title: "Databases & ORMs",
     icon: "Database",
     skills: [
-      { name: "MongoDB", level: "NoSQL Database", status: "Practicing", icon: "Database" },
-      // { name: "PostgreSQL", level: "Relational SQL", status: "Currently Learning", icon: "Database" },
-      { name: "MySQL", level: "Relational DB", status: "Practicing", icon: "Database" },
-      // { name: "Mongoose / Prisma", level: "ORM / ODM", status: "Practicing", icon: "Layers" }
+      { name: "MongoDB", level: "NoSQL Database", status: "Proficient", icon: "Database" },
+      { name: "PostgreSQL", level: "Relational SQL DB", status: "Proficient", icon: "Database" },
+      { name: "Prisma ORM", level: "Type-safe ORM", status: "Proficient", icon: "Layers" }
     ]
   },
   {
-    title: "DevOps & Cloud Deployment",
-    icon: "Cloud",
-    skills: [
-      { name: "Docker", level: "Containerization", status: "Practicing", icon: "Box" },
-      { name: "Docker Compose", level: "Multi-container Stack", status: "Practicing", icon: "Boxes" },
-      { name: "Git & GitHub", level: "Version Control & Workflow", status: "Proficient", icon: "GitBranch" },
-      { name: "AWS", level: "EC2 & S3 Basics", status: "Currently Learning", icon: "CloudSun" },
-      { name: "Vercel / Netlify", level: "Web Hosting", status: "Proficient", icon: "Globe" },
-      { name: "Linux", level: "Ubuntu / Bash", status: "Active User", icon: "Terminal" }
-    ]
-  },
-  {
-    title: "Development Tools & Environment",
+    title: "Developer Tools",
     icon: "Wrench",
     skills: [
+      { name: "Git & GitHub", level: "Version Control", status: "Proficient", icon: "GitBranch" },
       { name: "VS Code", level: "Primary IDE", status: "Proficient", icon: "Laptop" },
-      { name: "Postman", level: "API Testing & Docs", status: "Proficient", icon: "Send" },
-      { name: "npm / Vite", level: "Build & Package Tools", status: "Proficient", icon: "Package" },
-      { name: "Python", level: "Scripting & Data Basics", status: "Practicing", icon: "Code" }
+      { name: "Eclipse", level: "Java IDE", status: "Proficient", icon: "Code" },
+      { name: "Docker", level: "Containerization", status: "Proficient", icon: "Box" },
+      { name: "Linux", level: "Ubuntu / Command Line", status: "Proficient", icon: "Terminal" }
+    ]
+  },
+  {
+    title: "Cloud & DevOps",
+    icon: "Cloud",
+    skills: [
+      { name: "Google Cloud Platform", level: "Cloud Computing", status: "Proficient", icon: "CloudSun" },
+      { name: "Jenkins", level: "CI/CD Automation", status: "Proficient", icon: "Workflow" },
+      { name: "Terraform", level: "Infrastructure as Code", status: "Proficient", icon: "Boxes" }
     ]
   }
 ];
 
 export const CURRENTLY_LEVELING_UP = [
   {
-    topic: "Next.js & Full-Stack React Frameworks",
+    topic: "Full-Stack Travel Platform (Quester)",
+    icon: "🌍",
+    badge: "Full-Stack & Flask",
+    progress: 95,
+    description: "Route optimization, personalized recommendation algorithms, React + Node.js + Flask APIs."
+  },
+  {
+    topic: "Career OS Platform",
     icon: "⚡",
-    badge: "Full-Stack",
-    progress: 75,
-    description: "Learning Server-Side Rendering (SSR), Static Site Generation (SSG), App Router, and full-stack API routes."
-  },
-  // {
-  //   topic: "PostgreSQL & Prisma ORM",
-  //   icon: "🐘",
-  //   badge: "Backend / DB",
-  //   progress: 70,
-  //   description: "Designing relational database schemas, complex SQL queries, indexes, and type-safe Prisma database access."
-  // },
-  {
-    topic: "RESTful API Architecture & Authentication",
-    icon: "🔐",
-    badge: "API Design",
-    progress: 85,
-    description: "Building scalable Node.js/Express REST endpoints, JWT authentication middleware, rate limiting, and input validation."
+    badge: "Next.js & Prisma",
+    progress: 90,
+    description: "Building academic goal tracking, customizable timetables, and competitive programming tracking (LeetCode & Codeforces)."
   },
   {
-    topic: "DSA & Algorithmic Problem Solving",
-    icon: "🧠",
-    badge: "Core CS",
-    progress: 85,
-    description: "Consistent practice in Data Structures, Algorithms, and Space/Time Complexity optimization in Java & JavaScript."
-  },
-  {
-    topic: "Containerized Web Applications (Docker)",
-    icon: "🐳",
-    badge: "DevOps",
-    progress: 80,
-    description: "Containerizing React + Node.js + Database applications with multi-stage Dockerfiles and Docker Compose."
-  },
-  {
-    topic: "Cloud Deployment & AWS Basics",
+    topic: "Cloud Infrastructure & DevOps",
     icon: "☁️",
-    badge: "Cloud",
-    progress: 70,
-    description: "Deploying full-stack web applications to AWS EC2, configuring S3 buckets, and setting up reverse proxies with Nginx."
+    badge: "GCP & Terraform",
+    progress: 85,
+    description: "Configuring Google Cloud Platform services, Jenkins CI/CD pipelines, and Infrastructure as Code using Terraform."
   }
 ];
+
 

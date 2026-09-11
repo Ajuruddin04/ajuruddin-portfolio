@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SOCIAL_LINKS } from '../data/socials';
-import { GithubIcon, LinkedinIcon, InstagramIcon } from './BrandIcons';
-import { Mail, Send, Copy, Check, Sparkles, MessageSquare } from 'lucide-react';
+import { GithubIcon, LinkedinIcon, InstagramIcon, CodeforcesIcon } from './BrandIcons';
+import { Mail, Send, Copy, Check, Sparkles, MessageSquare, Phone } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export default function Contact() {
@@ -69,6 +69,20 @@ export default function Contact() {
               {/* Direct Buttons */}
               <div className="space-y-3 pt-2">
                 
+                {/* Phone Direct */}
+                {SOCIAL_LINKS.phone && (
+                  <a
+                    href={`tel:${SOCIAL_LINKS.phone}`}
+                    className="w-full p-3.5 rounded-xl glass-panel hover:bg-slate-800 text-slate-200 hover:text-white font-semibold text-xs transition-all flex items-center justify-between border border-slate-700 group"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Phone className="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform" />
+                      <span>{SOCIAL_LINKS.phone}</span>
+                    </div>
+                    <span className="font-mono text-[10px] text-emerald-300">CALL ME ↗</span>
+                  </a>
+                )}
+
                 {/* Email Direct */}
                 {SOCIAL_LINKS.email && (
                   <a
@@ -95,7 +109,7 @@ export default function Contact() {
                       <GithubIcon className="w-4 h-4 text-purple-400 group-hover:scale-110 transition-transform" />
                       <span>github.com/Ajuruddin04</span>
                     </div>
-                    <span className="font-mono text-[10px] text-emerald-400">VERIFIED</span>
+                    <span className="font-mono text-[10px] text-emerald-400">GITHUB</span>
                   </a>
                 )}
 
@@ -115,21 +129,21 @@ export default function Contact() {
                   </a>
                 ) : null}
 
-                {/* Instagram Button */}
-                {SOCIAL_LINKS.instagram ? (
+                {/* Codeforces Button */}
+                {SOCIAL_LINKS.codeforces && (
                   <a
-                    href={SOCIAL_LINKS.instagram}
+                    href={SOCIAL_LINKS.codeforces}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full p-3.5 rounded-xl glass-panel hover:bg-slate-800 text-slate-200 hover:text-white font-semibold text-xs transition-all flex items-center justify-between border border-slate-700 group"
                   >
                     <div className="flex items-center gap-3">
-                      <InstagramIcon className="w-4 h-4 text-rose-400 group-hover:scale-110 transition-transform" />
-                      <span>@azzu__24</span>
+                      <CodeforcesIcon className="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform" />
+                      <span>Codeforces Profile</span>
                     </div>
-                    <span className="font-mono text-[10px] text-slate-400">INSTAGRAM ↗</span>
+                    <span className="font-mono text-[10px] text-amber-300">CP ↗</span>
                   </a>
-                ) : null}
+                )}
 
                 {/* Copy Email Button */}
                 <button
